@@ -20,7 +20,7 @@ This repository contains four main functions:
 These functions can be combined to perform a multiscale direction-dependent analysis of images based on structure functions, see Script.py.
 
 # References
-Carlos Granero-Belinchon, Stephane G. Roux, Nicolas B. Garnier, Pierre Tandeo, Bertrand Chapron and Alexis Mouche, Two-dimensional structure functions to characterize convective rolls in the marine atmospheric boundary layer from Sentinel-1 SAR images, preprint Arxiv ...
+Carlos Granero-Belinchon, Stephane G. Roux, Nicolas B. Garnier, Pierre Tandeo, Bertrand Chapron and Alexis Mouche, **Two-dimensional structure functions to characterize convective rolls in the marine atmospheric boundary layer from Sentinel-1 SAR images**, preprint Arxiv ...
 
 # Contact
 

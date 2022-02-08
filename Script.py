@@ -13,6 +13,7 @@ from Moments import compute_moments_2D
 
 #%% Script 2D Analysis
 
+# Image should be the two-dimensional field we want to analyze
 image=np.random.randn(512,512)
 # We normalize the image by centering and standarizing it
 tmp=(image-np.nanmean(image))/np.nanstd(image)

@@ -12,10 +12,10 @@ A change of coordinates from cartesian to polar allows for analysis with respect
 # Contents
 This repository contains four main functions: 
 
-1) Incrs_anisotropic_generator2d: contained in the Increments.py file, this function takes as input a two-dimensional field <img src="https://render.githubusercontent.com/render/math?math=F(x,y)"> and two scales <img src="https://render.githubusercontent.com/render/math?math=l_x"> and <img src="https://render.githubusercontent.com/render/math?math=l_y"> and generates the process <img src="https://render.githubusercontent.com/render/math?math=\delta_{l_x,l_y}F"> which is the spatial increment of the two-dimensional field.
-2) compute_moments_2D: contained in the Moments.py file, this function computes the <img src="https://render.githubusercontent.com/render/math?math=p"> order moment of a given n-dimensional field introduced as input.
-3) polar_axis: contained in Polar_coord.py, this function returns 2 numpy arrays characterizing the polar coordinates of the output field of the function field_2D_polar
-4) field_2D_polar: contained in Polar_coord.py, this function returns the cartesian field used as input in polar coordinates.
+1) **Incrs_anisotropic_generator2d**: contained in the Increments.py file, this function takes as input a two-dimensional field <img src="https://render.githubusercontent.com/render/math?math=F(x,y)"> and two scales <img src="https://render.githubusercontent.com/render/math?math=l_x"> and <img src="https://render.githubusercontent.com/render/math?math=l_y"> and generates the process <img src="https://render.githubusercontent.com/render/math?math=\delta_{l_x,l_y}F"> which is the spatial increment of the two-dimensional field.
+2) **compute_moments_2D**: contained in the Moments.py file, this function computes the <img src="https://render.githubusercontent.com/render/math?math=p"> order moment of a given n-dimensional field introduced as input.
+3) **polar_axis**: contained in Polar_coord.py, this function returns 2 numpy arrays characterizing the polar coordinates of the output field of the function field_2D_polar
+4) **field_2D_polar**: contained in Polar_coord.py, this function returns the cartesian field used as input in polar coordinates.
 
 These functions can be combined to perform a multiscale direction-dependent analysis of images based on structure functions, see Script.py.
 

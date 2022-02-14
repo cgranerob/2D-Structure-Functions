@@ -13,7 +13,8 @@ from Moments import compute_moments_2D
 
 #%% Script 2D Analysis
 
-image=np.random.randn(256,256)
+image=np.random.randn(256,256) # Interesting images of ocean surface roughness can be found at https://www.seanoe.org/data/00456/56796/
+
 # We normalize the image by centering and standarizing it
 tmp=(image-np.nanmean(image))/np.nanstd(image)
 
@@ -53,5 +54,43 @@ from Polar_coord import polar_axis
 axis_t, axis_r, size = polar_axis(S2, n_theta=-1)
 S2_polar = field_2D_polar(S2, n_theta=-1)
 S3_polar = field_2D_polar(S3norm, n_theta=-1)
+
+#%% Plot of images
+
+# Cartesian
+plt.figure()
+plt.contourf(scalesy,scalesx,S2new, cmap=BrBG)
+plt.xlabel(r'$\delta x$')
+plt.ylabel(r'$\delta y$')
+plt.colorbar()
+plt.title(r'$S_2(\delta_x \delta_y X)$')
+#plt.savefig('/home/administrateur/Desktop/Research/ANR_SCALES/Multiscale_Entropy_Images/Scripts_images-SAR/S2_2D_20170315.pdf',format='pdf',bbox_inches='tight')
+plt.show()
+
+plt.figure()
+plt.contourf(scalesy,scalesx,S3new, cmap='seismic')
+plt.xlabel(r'$\delta x$')
+plt.ylabel(r'$\delta y$')
+plt.colorbar()
+plt.title(r'$S_3(\delta_x \delta_y X)$')
+#plt.savefig('/home/administrateur/Desktop/Research/ANR_SCALES/Multiscale_Entropy_Images/Scripts_images-SAR/S3_2D_20170315.pdf',format='pdf',bbox_inches='tight')
+plt.show()
+
+# Polar
+plt.figure()
+plt.contourf(axis_r,axis_t,S2new_p, cmap=BrBG)
+plt.xlabel(r'$r$')
+plt.ylabel(r'$\theta$')
+plt.colorbar()
+plt.title(r'$S_2(\delta_r X)$')
+plt.show()
+
+plt.figure()
+plt.contourf(axis_r,axis_t,S3new_p, cmap='seismic')
+plt.xlabel(r'$r$')
+plt.ylabel(r'$\theta$')
+plt.colorbar()
+plt.title(r'$S_3 $')
+plt.show()
 
 np.savez('StructureFunctions_Incrs_myimage.npz', S2=S2, S3norm=S3norm, ps=ps, scalesx=scalesx, scalesy=scalesy)

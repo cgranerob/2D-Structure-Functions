@@ -5,9 +5,9 @@ The nth order structure function of a two-dimensional field <img src="https://re
 
 <img src="https://render.githubusercontent.com/render/math?math=S^{l_x,l_y}_{n}(F) = \mathbb{E} \left\{ \left( F(r_{x} %2B l_{x}, r_{y} %2B l_{y}) - F(r_{x}, r_{y}) \right)^{n} \right\} ">
 
-where <img src="https://render.githubusercontent.com/render/math?math=(r_x,r_y)"> denotes a spatial position, <img src="https://render.githubusercontent.com/render/math?math=l_x"> and <img src="https://render.githubusercontent.com/render/math?math=l_y"> are the separation distances along each dimension of the field and <img src="https://render.githubusercontent.com/render/math?math=\mathbb{E}"> is the expected value operator. So: 
+where <img src="https://render.githubusercontent.com/render/math?math=(r_x,r_y)"> denotes a spatial position, <img src="https://render.githubusercontent.com/render/math?math=l_x"> and <img src="https://render.githubusercontent.com/render/math?math=l_y"> are the separation distances along each dimension of the field, <img src="https://render.githubusercontent.com/render/math?math=\mathbb{E}"> is the expected value operator and <img src="https://render.githubusercontent.com/render/math?math=\delta_{l_x,l_y}F = F(r_x %2B l_x,r_y %2B l_y) - F(r_x,r_y)"> is called the increment. So: 
 
-- The second order structure function <img src="https://render.githubusercontent.com/render/math?math=S^{l_x,l_y}_{2}(F)"> is the variance of the increment <img src="https://render.githubusercontent.com/render/math?math=\delta_{l_x,l_y}F = F(r_x %2B l_x,r_y %2B l_y) - F(r_x,r_y)">.
+- The variance of the increment is the second order structure function <img src="https://render.githubusercontent.com/render/math?math=S^{l_x,l_y}_{2}(F)">.
 
 - The skewness of the increment is the ratio <img src="https://render.githubusercontent.com/render/math?math=\frac{S^{l_x,l_y}_{3}(F)}{S^{l_x,l_y}_{2}(F)^{3/2}}">
 

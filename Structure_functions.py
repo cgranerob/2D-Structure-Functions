@@ -74,23 +74,14 @@ def compute_moments_2D(data, moms=np.array((2,3))):
         incr = compute_moments_2D(data, moms=2)
     
     ##
-    C. Granero-Belinchon (IMT- Atlantique), October 2021  
+    C. Granero-Belinchon (IMT- Atlantique), N.B Garnier (ENS Lyon), October 2021  
     """
     
-    if len(np.shape(moms))==1:
-        # Check dimension of moms, i.e. number of moments to estimate
-        mm=len(moms)
+    m = np.array(moms).flatten()
+    Moments=np.zeros(len(m)) # Initialization of moments matrix 
     
-        # Initialization of moments matrix 
-        Moments=np.zeros((mm))
-    
-        for i in range(mm):      
-            # Order of the moment
-            p=moms[i]
-            # Moments estimation
-            Moments[i]=np.nanmean(data.flatten()**p) 
-    elif len(np.shape(moms))==0:
-        Moments=np.nanmean(data.flatten()**moms)
+    for i in range(len(m)):      
+            Moments[i]=np.nanmean(data.flatten()**m[i]) 
              
     return Moments
 

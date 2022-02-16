@@ -9,9 +9,9 @@ where <img src="https://render.githubusercontent.com/render/math?math=(r_x,r_y)"
 
 - The variance of the increment is the second order structure function <img src="https://render.githubusercontent.com/render/math?math=S^{l_x,l_y}_{2}(F)">.
 
-- The skewness of the increment is the ratio <img src="https://render.githubusercontent.com/render/math?math=\mathcal{S}=\frac{S^{l_x,l_y}_{3}(F)}{S^{l_x,l_y}_{2}(F)^{3/2}}">
+- The skewness of the increment is the ratio     <img src="https://render.githubusercontent.com/render/math?math=\mathcal{S}=\frac{S^{l_x,l_y}_{3}(F)}{S^{l_x,l_y}_{2}(F)^{3/2}}">
 
-- The kurtosis of the increment is <img src="https://render.githubusercontent.com/render/math?math=\mathcal{F}=\frac{S^{l_x,l_y}_{4}(F)}{S^{l_x,l_y}_{2}(F)^{2}}"> and so on.
+- The kurtosis of the increment is     <img src="https://render.githubusercontent.com/render/math?math=\mathcal{F}=\frac{S^{l_x,l_y}_{4}(F)}{S^{l_x,l_y}_{2}(F)^{2}}"> and so on.
 
 A change of coordinates from cartesian to polar allows for analysis with respect to direction: <img src="https://render.githubusercontent.com/render/math?math=S_{n}^{l_x,l_y} \rightarrow S_{n}^{r,\theta}">.
 

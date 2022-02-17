@@ -26,7 +26,7 @@ This repository contains four main functions contained in the Structure_function
 These functions can be combined to perform a multiscale direction-dependent analysis of images based on structure functions, see Script.ipynb.
 
 # References
-Carlos Granero-Belinchon, Stephane G. Roux, Nicolas B. Garnier, Pierre Tandeo, Bertrand Chapron and Alexis Mouche, **Two-dimensional structure functions to characterize convective rolls in the marine atmospheric boundary layer from Sentinel-1 SAR images**, preprint Arxiv ...
+Carlos Granero-Belinchon, Stephane G. Roux, Nicolas B. Garnier, Pierre Tandeo, Bertrand Chapron and Alexis Mouche, **Two-dimensional structure functions to characterize convective rolls in the marine atmospheric boundary layer from Sentinel-1 SAR images**, preprint <a href="https://hal.archives-ouvertes.fr/hal-03576400"> https://hal.archives-ouvertes.fr/hal-03576400</a> 
 
 # Contact
 
